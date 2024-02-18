@@ -1,8 +1,9 @@
 public class Practice {
     public static void main(String[] args){
-
-        String goat = "Hello World";
-        System.out.println(goat);
+        // All data types must be declared before their name
+        // Concatenate things with a plus
+        String user = "User";
+        System.out.println("Hello" + user);
 
     }
 }
