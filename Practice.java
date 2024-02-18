@@ -1,4 +1,6 @@
+// class
 public class Practice {
+    // main method
     public static void main(String[] args){
         // All data types must be declared before their name
         // Concatenate things with a plus
