@@ -7,161 +7,131 @@ public class Practice { // class
 
     }
 }
-
 // simple variables 
 public class walkthrough {
-
     public static void main(String[] args) {
-
         int x = 123; //initialization
         double y = 3.14;
         boolean z = true;
         char symbol ='@';
         String name ="jeremy";
-
-        System.out.println("hello "+name);
+        System.out.println("hello " + name);
     }
 }
 // Swapping 2 variables
 public class walkthrough {
-
     public static void main(String[] args) {
-        
+        // decalre variables
         String x = "water";
         String y = "kool-Aid";
         String temp;
-
+        // swap variables 
         temp=x;
         x=y;
         y=temp;
-
-        System.out.println("x: "+x);
-        System.out.println("y: "+y);
-
-
+        // print swapped variables
+        System.out.println("x: " + x);
+        System.out.println("y: " + y);
     }
 }
 //using a scanner for user input
 import java.util.Scanner;;
-
 public class walkthrough{
-
     public static void main(String[] args) {
-        
+        // set scanner variables
         Scanner scanner = new Scanner(System.in);
-
+        // print out prompt and scan input 
         System.out.println("What is your name");
         String name = scanner.nextLine();
+        // print out prompt and scan input 
         System.out.println("How old are you?");
         int age = scanner.nextInt();
-        scanner.nextLine();
+        scanner.nextLine(); // !! please explain !!
+        // print out prompt and scan input 
         System.out.println("what is your fav food");
         String food = scanner.nextLine();
-
+        // print user input
         System.out.println("Hello "+name);
         System.out.println("you are "+age+"year old ");
         System.out.println("You like "+food);
-
     }
 }
+// math operations 
 public class walkthrough {
-
     public static void main(String[] args) {
-        
         // expression = opperands and opperators 
-        //operands = values, variables, numbers, quantity
+        // operands = values, variables, numbers, quantity
         // operators = + - * / & 
-
         int friends = 10;
-
         friends = friends / 2;
-
         System.out.println(friends);
     }
 }
 //simple gui with java
 import javax.swing.JOptionPane;
-
 public class walkthrough {
-
     public static void main(String[] args) {
-
+        // label and output???
         String name = JOptionPane.showInputDialog("Enter your name");
         JOptionPane.showMessageDialog(null,"Hello "+name);
-
+        //
         int age = Integer.parseInt(JOptionPane.showInputDialog("Enter your age"));
         JOptionPane.showMessageDialog(null,"you are "+age+"Years old");
-
+        // 
         double height = Double.parseDouble(JOptionPane.showInputDialog("Enter your height"));
         JOptionPane.showMessageDialog(null,"you are "+height+" cm tall");
-
     }   
 }
 //max / min 
 public class walkthrough{
-
-public static void main(String[] args) {
-
-    double x = 3.14;
-    double y = -10;
-
-    double z = Math.max(x, y);
-
-    System.out.println(z);
-    
+    public static void main(String[] args) {
+        // declare variables 
+        double x = 3.14;
+        double y = -10;
+        // print max 
+        double z = Math.max(x, y);
+        System.out.println(z);   
+    }
 }
-}
-
 //find the hypotenous of a triangle using a scanner 
 import java.util.Scanner;
-
 public class walkthrough{
-
     public static void main(String[] args) {
-        
+        // declare variables 
         double y  ;
         double x  ;
         double z  ;
-
+        // declare scanner?
         Scanner scanner = new Scanner(System.in);
-
+        // scan user input
         System.out.println("Enter side x: ");
         x = scanner.nextDouble();
         System.out.println("Enter side y: ");
         y = scanner.nextDouble();
-
+        // square root 
         z = Math.sqrt((x*x)+(y*y));
-
+        // print result 
         System.out.println("The hypotenous is: "+z);
-
     }
 }
 //pseudo random code to generate random numbers
 import java.util.Random;
-
 public class walkthrough {
-
     public static void main(String[] args) {
-        
+        // random variable 
         Random random = new Random(); 
-
         //int x = random.nextInt(6)+1;
         //double y = random.nextDouble();
         boolean z = random.nextBoolean();
-
+        // print result
         System.out.println(z);
     }
 }
-
 //IF statements 
-
 public class walkthrough {
     public static void main(String[] args) {
-        
         // if statement = perfroms a block of code if its condition evaluates to be true 
-
         int age = 75;
-
         if(age==75){
             System.out.println("old aaaaah");
         }
@@ -175,17 +145,12 @@ public class walkthrough {
             System.out.println("you are not an adult");
         }
     }
-
 }
-
+// Switch and case
 public class walkthrough{
-
     public static void main(String[] args) {
-        
         //switch = statement that allows a variable to be tested for equality against a list of values
-
         String day = "Monday";
-
         switch(day){
             case "sunday": System.out.println("It is sunday");
             break;
@@ -204,11 +169,8 @@ public class walkthrough{
             default: System.out.println("There is no match");
             // ^ this is if there is no match
         }
-
     }
-
 }
-
 //&& operator
         int temp = 15;
 
@@ -221,7 +183,6 @@ public class walkthrough{
         else{
             System.out.println("it is cold outside");
         }
-
 //|| operator 
         Scanner scanner = new Scanner(System.in);
 
@@ -234,18 +195,11 @@ public class walkthrough{
         else{
             System.out.println("you are still playing the game");
         }
-
-
 // ! logical operator
-
 import java.util.Scanner;
-
 public class walkthrough{
-
     public static void main(String[] args) {
-        
         //logical operators = used to connect two or more expressions 
-
         //              && = (AND) both conditions must be true
         //              || = (OR) either conditions must be true
         //              ! = (NOT) reverses boolean value of condition
@@ -261,20 +215,12 @@ public class walkthrough{
         else{
             System.out.println("you are still playing the game");
         }
-
-
-
     }
 }
-
 //DO and WHILE LOOP
-
 import java.util.Scanner;
-
 public class walkthrough{
-
     public static void main(String[] args) {
-        
         //while loop = executes a block of cde as long as it's condition remains true
 
         Scanner scanner = new Scanner(System.in);
@@ -286,7 +232,6 @@ public class walkthrough{
         }while(name.isBlank())
 
         System.out.println("Hello "+name);
-        
     }
 }
 
@@ -321,11 +266,8 @@ public class walkthrough{
 }
 //
 import java.util.Scanner;
-
 public class walkthrough {
-
     public static void main(String[] args) {
-        
 
     // nested loops = a loop inside of a loop 
 
@@ -353,9 +295,8 @@ public class walkthrough {
 
 //arrays
 public class walkthrough {
-
     public static void main(String[] args) {
-
+        
         String[] cars = new String[4];
 
         cars[0] = "Holden";
@@ -380,9 +321,7 @@ public class walkthrough {
 
 //2D arrays 
 public class walkthrough{
-
     public static void main(String[] args) {
-        
         //2D array = an array f arrays
 
        String[][] cars = {
@@ -404,12 +343,8 @@ public class walkthrough{
             System.out.println();
             for(int j=0; j<cars[i].length; j++){
                 System.out.println(cars[i] [j]+"");
-
             }
-
         }
-
-
     }
 }
 
@@ -431,8 +366,6 @@ public class walkthrough {
         //String result = name.trim();
         //String result = name.replace('o','a');
         
-        System.out.println(result);
-        
+        System.out.println(result);       
     }
 }
-
