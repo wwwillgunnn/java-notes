@@ -1,6 +1,3 @@
-import java.util.Arrays;
-import java.util.*;
-import java.util.Collections;
 import java.util.LinkedList;
 import java.util.Iterator;
 import java.util.Scanner;
@@ -10,10 +7,9 @@ public class week4tut {
     // Crate linked list  
     LinkedList<String> linkedlist = new LinkedList<String>(); 
     // things for question 2 //
-    LinkedList<String> lowToHigh = new LinkedList<String>(); 
+    LinkedList<String> reverse = new LinkedList<String>(); 
     // Create iterator object with linkedlist as the instance
     Iterator<String> it = linkedlist.iterator();
-
     // Set scanner variable  
     Scanner scanner = new Scanner(System.in);
     for(int i = 0; i < 3; i++){
@@ -35,17 +31,11 @@ public class week4tut {
             break;
         }
         // add to reversed list 
-        lowToHigh.push(linkedlist.get(index));
+        reverse.push(linkedlist.get(index));
         index ++;
     }
-    System.out.println("Output changed linked list = " + lowToHigh);
+    System.out.println("Output changed linked list = " + reverse);
     // print size of list 
-    System.out.println("Size: " + lowToHigh.size());
+    System.out.println("Size: " + reverse.size());
     }
 } 
-
-/*
- * In computer science, a linked list is a linear collection of data elements whose order is not given by their 
- * physical placement in memory. Instead, each element points to the next. It is a data structure consisting of a 
- * collection of nodes which together represent a sequence
- */
