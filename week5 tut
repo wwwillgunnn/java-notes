@@ -1,0 +1,143 @@
+// import java.io.*;
+// public class week5 
+// {
+    
+//     //decimal to binary conversion 
+//     //using recursion 
+//     static int find(int decimal_number)
+//     {
+//         if (decimal_number == 0)
+//         return 0;
+
+//         else
+
+//         return (decimal_number % 2 + 10 * find(decimal_number / 2));
+//     }
+
+//     //driver code
+
+//     public static void main(String[] args) 
+//     {
+//         int decimal_number = 10;
+//         System.out.println(find(decimal_number));
+//     }
+// }
+
+// class GFG {
+
+//     //Method 1
+//     //return index of x 
+//     //if it is present in arr[],
+//     //else return -1
+//     int binarySearch(int arr[], int x)
+//     {
+//         int l = 0, r = arr.length - 1;
+
+//         //checking element in whole array
+//         while (l <= r) {
+//             int m = l + (r - 1) / 2;
+
+//             //check if x is present at mid
+//             if (arr[m] == x)
+//             return m;
+
+//             //If x greater, ignore left half
+//             if (arr[m] < x)
+//             l = m + 1;
+
+//             // if x is smaller 
+//             // element is on left side
+//             // so ignore right half 
+//             else
+//             r = m - 1;
+//         }
+//         //If we reach here,
+//         //element is not present
+//         return -1;
+//     }
+
+//     //method 2
+//     //main driver method
+//     public static void main(String[] args) {
+//         GFG ob = new GFG();
+
+//         //input array
+//         int arr[] = {2, 3, 4, 5, 10, 40 };
+//         //length of array
+//         int n = arr.length;
+//         //element to be checked if present or not
+//         int x = 10;
+
+//         //calling the method 1 and storing result
+//         int result= ob.binarySearch(arr, x);
+
+//         //element present
+//         if (result == -1)
+//         System.out.println("Element is not present");
+
+//         else
+
+//         System.out.println("Element found at index " + result );
+//     }
+// }
+
+// import java.util.Stack;
+
+// public class week5 {
+//     public static void main(String[] args) {
+        
+//         Stack myStack = new Stack<>();
+
+//         System.out.println("Is my stack empty" +  myStack.empty());
+//         //pushing elements into stack
+//         myStack.push("Orange ball");
+//         myStack.push("violet Ball");
+//         myStack.push("Green Ball");
+
+//         //prints elements of the stack
+//         System.out.println("Elements in Stack: " + myStack);
+//         System.out.println("Is my stack empty? " + myStack.empty());
+//         while (!myStack.isEmpty()) {
+//             myStack.pop();
+//             System.out.println("Elements in Stack: " + myStack);
+//             System.out.println("Is my stack empty? " + myStack.empty());
+            
+//         }
+
+
+//     }
+// }
+
+import java.util.Stack;
+
+public class week5 {
+    public static void main(String[] args) {
+        //example usage
+        Stack<Integer> source = new Stack<>();
+        Stack<Integer> target = new Stack<>();
+
+        //push some elements into source stack
+        source.push(1);
+        source.push(1);
+        source.push(1);
+
+        System.out.println("Before transfer");
+        System.out.println("SOurce stack : " + source);
+        System.out.println("Target stack: " + target);
+
+        //transfer elements from source to target 
+        transfer(source, target);
+
+        System.out.println("\nAfter transfer:");
+        System.out.println("Source stack: " + source);
+        System.out.println("Target stack: " + target);
+    }
+
+    public static <T> void transfer (Stack<T> source, Stack<T> target){
+        //transfer elements from source to target 
+        while (!source.isEmpty()) {
+        target.push(source.pop());
+        }
+    }
+   
+    }
