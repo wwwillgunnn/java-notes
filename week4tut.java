@@ -12,7 +12,9 @@ public class week4tut {
     Iterator<String> it = linkedlist.iterator();
     // Set scanner variable  
     Scanner scanner = new Scanner(System.in);
-    for(int i = 0; i < 3; i++){
+    int lengthOfList = scanner.nextInt();
+    scanner.nextLine(); 
+    for(int i = 0; i < lengthOfList; i++){
         // input for linked list
         System.out.print("Enter value: "); 
         String item = scanner.nextLine(); 
@@ -27,7 +29,7 @@ public class week4tut {
     System.out.println("Size: " + linkedlist.size());
     int index = 0;
     while(it.hasNext()){
-        if(index > 2){
+        if(index > lengthOfList - 1){
             break;
         }
         // add to reversed list 
@@ -39,3 +41,9 @@ public class week4tut {
     System.out.println("Size: " + reverse.size());
     }
 } 
+
+/*
+ * In computer science, a linked list is a linear collection of data elements whose order is not given by their 
+ * physical placement in memory. Instead, each element points to the next. It is a data structure consisting of a 
+ * collection of nodes which together represent a sequence
+ */
