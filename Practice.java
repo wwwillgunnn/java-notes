@@ -551,3 +551,32 @@ public class JavaCourse {
         
     }
 }
+
+
+//method 
+public class JavaCourse {
+    public static void main(String[] args) {
+
+        //method = a block of code that is executed whenever t is called upon
+        //modifier defines the access type of the method
+        //public: accessible in all classes in the application 
+        //protected: it is accessible within the class in which it is defined 
+        //private: it is accessible only within the class in which it is defined 
+        //default: it is declared/defined without using any modifier
+
+        //return type: the data type of the value returned by the method or void if does not return a value 
+        //Method name: the rules for field names apply to method names as well, but the convention is a little different, mandatory in syntax
+        //parameter list: comma-separated list of the input parameters is defined, preceeded by their data type, within the enclosed parethesis
+        //Exception List: The exceptions you expect by the method can throw, ou can specify these exception(s) optional in syntax 
+        //Method body: it is enclosed between braces. the code you need to be executed to perform our intended operations
+
+        //<access_modifier> <return_type> <method_name>( list_of_parameters)
+        //body
+        
+    }
+
+    //inside the method you can declare the data type if you call the method in the from of a String or Integer
+    static void hello() {
+        System.out.println("Hello");
+    }
+}
