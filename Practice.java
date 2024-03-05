@@ -474,3 +474,80 @@ public class Practice {
         return count;
     }
 }
+
+//2D aray list
+import java.util.*;
+public class JavaCourse {
+    public static void main(String[] args) {
+
+        ArrayList<ArrayList<String>> GroceryList = new ArrayList<>();
+        
+        ArrayList<String> bakeryList = new ArrayList();
+        bakeryList.add("Pasta");
+        bakeryList.add("bread");
+        bakeryList.add("donut");
+
+        ArrayList<String> MeatList = new ArrayList();
+        MeatList.add("Steak");
+        MeatList.add("Lamb");
+        MeatList.add("donut");
+
+        ArrayList<String> DrinkList = new ArrayList();
+        DrinkList.add("Soda");
+        DrinkList.add("Cola");
+        DrinkList.add("Sprite");
+
+        GroceryList.add(MeatList);
+        GroceryList.add(bakeryList);
+        GroceryList.add(DrinkList);
+
+        System.out.println(GroceryList);
+    }
+}
+
+//arrayList
+import java.util.ArrayList;
+public class JavaCourse {
+    public static void main(String[] args) {
+        
+        ArrayList<String> food = new ArrayList<String>();
+
+        food.add("Pizza");
+        food.add("Pizza1");
+        food.add("Pizza2");
+
+        food.set(0, "Pizza4");
+        food.remove(2);
+
+        for(int i=0; i<food.size(); i++) {
+            System.out.println(food.get(i));
+        }
+
+    }
+    
+}
+
+//For each
+import java.util.ArrayList;
+
+public class JavaCourse {
+    public static void main(String[] args) {
+
+        //for-each = traversing technique to iterate through the elements in an array/collection
+        // less steps , more readable 
+        //less flexible 
+
+        //String[] animals = {"cat", "dog", "rat"};
+
+        ArrayList<String> animals = new ArrayList<>();
+
+        animals.add("cat");
+        animals.add("dog");
+        animals.add("bird");
+
+        for(String i : animals) {
+            System.out.println(i);
+        }
+        
+    }
+}
