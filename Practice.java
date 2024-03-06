@@ -67,7 +67,7 @@ public class walkthrough {
         System.out.println(friends);
     }
 }
-//simple gui with java
+//!!!!!simple gui with java!!!!!
 import javax.swing.JOptionPane;
 public class walkthrough {
     public static void main(String[] args) {
@@ -225,7 +225,7 @@ public class walkthrough{
 
         Scanner scanner = new Scanner(System.in);
         String name = "";
-
+        // do an ation before condition is checked 
         do{
             System.out.print("Enter our name: ");
             name = scanner.nextLine();
@@ -313,6 +313,7 @@ public class walkthrough {
     }
 }
         //array = used to store multiple values in a single variable
+//array is fixed
 
         //String[] cars ={"Commodore", "Falcon", "Rs3"};
         
@@ -370,129 +371,30 @@ public class walkthrough {
     }
 }
 
-// import java.util.Arrays; 
-// import java.util.*; 
-import java.util.Iterator;
-import java.util.LinkedList; 
-// import java.util.Iterator; 
-// import java.util.Collections; 
-import java.util.Scanner; 
-
-
-public class week4tut { 
-    public static void main(String[] args){ 
-    // Crate linked list  
-    LinkedList<String> linkedlist = new LinkedList<String>(); 
-    // things for question 2 //
-    LinkedList<String> lowToHigh = new LinkedList<String>(); 
-    // Create iterator object with linkedlist as the instance
-    Iterator<String> it = linkedlist.iterator();
-
-    // Set scanner variable  
-    Scanner scanner = new Scanner(System.in);
-    for(int i = 0; i < 3; i++){
-        // input for linked list
-        System.out.print("Enter value: "); 
-        String item = scanner.nextLine(); 
-        // add to linked list 
-        linkedlist.add(item);
-        }
-    // close scanner
-    scanner.close();
-    // print output 
-    System.out.println("Output linked list = " + linkedlist);
-    // print size of list 
-    System.out.println("Size: " + linkedlist.size());
-    int index = 0;
-    while(it.hasNext()){
-        if(index > 2){
-            break;
-        }
-        // add to reversed list 
-        lowToHigh.push(linkedlist.get(index));
-        index ++;
-    }
-    System.out.println("Output changed linked list = " + lowToHigh);
-    // print size of list 
-    System.out.println(" Size: " + lowToHigh.size());
-    }
-} 
-
 /*
  * In computer science, a linked list is a linear collection of data elements whose order is not given by their 
  * physical placement in memory. Instead, each element points to the next. It is a data structure consisting of a 
  * collection of nodes which together represent a sequence
  */
 
-public class Practice {
-    public static void main(String[] args){
-        int number = 0;
-        double value = 5;
-        String word = "Hello World";
-        System.out.println(isEven(number));
-        System.out.println(squaredSum(value));
-        System.out.println(vowels(word));
-
-        // Employee object methods and cool stuff :^)
-        Employee employee1 = new Employee("Franziska Waltraud", "HR Manager", 40000);
-        Employee employee2 = new Employee("Hubertus Andrea", "Software Engineer", 60000);
-        System.out.println("\nEmployee Details:");
-        employee1.printEmployeeDetails();
-        employee2.printEmployeeDetails();
-        employee1.raiseSalary(8);
-        employee2.raiseSalary(12);
-        System.out.println("\nAfter raising salary:");
-        System.out.println("\n8% for 'Franziska Waltraud':");
-        employee1.printEmployeeDetails();
-        System.out.println("\n12% for 'Hubertus Andrea':");
-        employee2.printEmployeeDetails();
-    }
-    // Prove that a number is even (check the end of the bit, if it ends in 1 its off and 0 its even)
-    public static boolean isEven(int value) {
-        return (value & 1) == 0;
-    }
-    // Squared number of everything lower than the inputted number
-    public static double squaredSum(double value){
-        // even numbers = new ArrayList [while true do {i = 0; i++ };]
-        double result = 0;
-        for(double i = 0; i <= value; i++){
-            double square = Math.pow(i, 2);
-            result += square;
-        }
-        // return outside the loop dummy
-        return result;
-    }
-    // Count the number of vowels in a character
-    public static int vowels(String word){
-        int count = 0;
-        for (int i = 0; i < word.length(); i++) {
-            if (word.charAt(i) == 'a' || word.charAt(i) == 'e' || word.charAt(i) == 'i' || word.charAt(i) == 'o' 
-            || word.charAt(i) == 'u') {
-                count++;
-            }
-        }
-        return count;
-    }
-}
-
-//2D aray list
+//2D array list
 import java.util.*;
 public class JavaCourse {
     public static void main(String[] args) {
 
         ArrayList<ArrayList<String>> GroceryList = new ArrayList<>();
         
-        ArrayList<String> bakeryList = new ArrayList();
+        ArrayList<String> bakeryList = new ArrayList<String>();
         bakeryList.add("Pasta");
         bakeryList.add("bread");
         bakeryList.add("donut");
 
-        ArrayList<String> MeatList = new ArrayList();
+        ArrayList<String> MeatList = new ArrayList<String>();
         MeatList.add("Steak");
         MeatList.add("Lamb");
         MeatList.add("donut");
 
-        ArrayList<String> DrinkList = new ArrayList();
+        ArrayList<String> DrinkList = new ArrayList<String>();
         DrinkList.add("Soda");
         DrinkList.add("Cola");
         DrinkList.add("Sprite");
@@ -567,7 +469,7 @@ public class JavaCourse {
         //return type: the data type of the value returned by the method or void if does not return a value 
         //Method name: the rules for field names apply to method names as well, but the convention is a little different, mandatory in syntax
         //parameter list: comma-separated list of the input parameters is defined, preceeded by their data type, within the enclosed parethesis
-        //Exception List: The exceptions you expect by the method can throw, ou can specify these exception(s) optional in syntax 
+        //Exception List: The exceptions you expect by the method can throw, you can specify these exception(s) optional in syntax 
         //Method body: it is enclosed between braces. the code you need to be executed to perform our intended operations
 
         //<access_modifier> <return_type> <method_name>( list_of_parameters)
@@ -584,7 +486,6 @@ public class JavaCourse {
 
 // overloaded methods
 public class JavaCourse {
-
     public static void main(String[] args) {
         
         // overloaded methods = methods that share the same name but have different parameters
