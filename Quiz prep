@@ -1,0 +1,39 @@
+Recursion and linked lists (WEEK4 LEC SLIDES)
+each item in a linked list is the "NODE" , eahc node has two parts , the first part stores the data and the second part has a reference or pointer or address of the next node in the linked list
+//
+To inset a node at the start/beginning/front of a linked list we need to do the following
+- Make the first node of linked list linked to the new code 
+- remove the head from the original first node of linked list 
+make the new node as the head of the linked list 
+//
+To insert a node after a given node in a linked list, we need to:
+- Check if the given node exists or not
+- if it does not exist
+- terminate the process
+//
+-If the given node exists
+- make the element to be inserted as a new node
+- change the next pointer of given node to the new node 
+- now shift the original next pointer of given node to the next pointer of new node
+//
+To inset a node at the end of a linked list, we need to:
+- Go to the last node of the linked list
+- change the next pointer of last node from null to the new node
+- make the next pointer of new node as null to show the end of linked list 
+//
+Advantages of a linked list
+- The linked list is a dynamic data structure. we can allocate and deallocate the memoery at run time itself
+- The node can be easily inserted or deleted using insertion and deletion function
+- the linked list makes good use of memory ahead of time 
+- it has an extremely rapid access time and can be accessed at a specific time without any memory overhead 
+- linear data structures like stack and the queue can be easil sed linked list 
+//
+Disadvantages of a linked lsit 
+- As each node of the linkedlist poins to a pointer, it requires more memory to store the elements than an array 
+- traversing the nodes of a linked list is quite tough, we wont be able to access any node at random in this case 
+- in a linked list, reverse traversing is harder since the pointer demands extra memory
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Recursion
+- performing the same operations multiple times with different inputs
+- in every step , we try smaller inputs to make the problem smaller 
+- base condition is needed to stop the recursion otherwise infinite loop will occur
