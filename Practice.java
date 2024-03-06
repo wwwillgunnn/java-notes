@@ -541,3 +541,84 @@ public class JavaCourse {
 
 }
 }
+
+//OOP 
+//file 1 
+public class JavaCourse {
+
+    public static void main(String[] args) {
+        
+        //object = an instance of a class that may contain attributes and methods
+        // example: (Phone, desk, computer, coffee cup)
+
+        car mycar = new car();
+
+        System.out.println(mycar.model);
+        System.out.println(mycar.make);
+        System.out.println(mycar.price);
+        mycar.drive();
+
+        }
+    }
+
+//file 1 is calling the attributes and methods from file 2
+
+//File 2 
+public class car {
+    
+    String make = "Subaru";
+    String model = "WRX";
+    int year = 2004;
+    String color = "blue";
+    double price = 10000;
+
+    void drive() {
+        System.out.println("You drive the car");
+
+    }
+    void brake() {
+        System.out.println("You step on the brakes");
+    }
+}
+
+
+//cnstructors
+//file main
+public class Main {
+
+public static void main(String[] args) {
+        
+    Human human = new Human("Rick", 65, 70);
+    Human human2 = new Human("Ben",16,90);
+
+
+    human2.eat();
+    human.drink();
+    }
+}
+
+//constructors are useful to assign different attributes to each object 
+
+//file Human
+public class Human {
+
+    String name;
+    int age;
+    double weight;
+
+
+    Human(String name, int age, double weight){
+
+        this.name = name;
+        this.age = age;
+        this.weight = weight;
+
+    }
+
+    void eat() {
+        System.out.println(this.name+ " is eating");
+    }
+    void drink() {
+        System.out.println(this.name+ " Is drinking");
+    }
+}
