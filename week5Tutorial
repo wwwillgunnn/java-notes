@@ -110,7 +110,7 @@
 
 import java.util.Stack;
 
-public class week5 {
+public class week5Tutorial {
     public static void main(String[] args) {
         //example usage
         Stack<Integer> source = new Stack<>();
