@@ -6,20 +6,6 @@ public class week2Tutorial {
         System.out.println(isEven(number));
         System.out.println(squaredSum(value));
         System.out.println(vowels(word));
-
-        // Employee object methods and cool stuff :^)
-        Employee employee1 = new Employee("Franziska Waltraud", "HR Manager", 40000);
-        Employee employee2 = new Employee("Hubertus Andrea", "Software Engineer", 60000);
-        System.out.println("\nEmployee Details:");
-        employee1.printEmployeeDetails();
-        employee2.printEmployeeDetails();
-        employee1.raiseSalary(8);
-        employee2.raiseSalary(12);
-        System.out.println("\nAfter raising salary:");
-        System.out.println("\n8% for 'Franziska Waltraud':");
-        employee1.printEmployeeDetails();
-        System.out.println("\n12% for 'Hubertus Andrea':");
-        employee2.printEmployeeDetails();
     }
     // Prove that a number is even (check the end of the bit, if it ends in 1 its off and 0 its even)
     public static boolean isEven(int value) {
