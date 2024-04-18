@@ -1,4 +1,4 @@
-public class week3tut {
+public class week2Tutorial {
     public static void main(String[] args){
         int number = 0;
         double value = 5;
