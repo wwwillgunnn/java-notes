@@ -1,4 +1,4 @@
-This repository contains some notes and useful tid-bits on java 
+This repo contains notes for ST2 (DATA STRUCTURES AND ALGORITHMS)
 
 // Data structures // 
 Time complexity is one of the most import things.
