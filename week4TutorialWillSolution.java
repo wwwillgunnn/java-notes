@@ -2,7 +2,7 @@ import java.util.LinkedList;
 import java.util.Iterator;
 import java.util.Scanner;
 
-public class week4tut { 
+public class week4TutorialWillSolution { 
     public static void main(String[] args){ 
     // Crate linked list  
     LinkedList<String> linkedlist = new LinkedList<String>(); 
