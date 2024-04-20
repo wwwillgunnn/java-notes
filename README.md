@@ -1,6 +1,6 @@
 This repo contains notes for ST2 (DATA STRUCTURES AND ALGORITHMS)  
    
-// Sorting algorithms //
+--- Sorting algorithms ---
 The cost to sort an arbitrary collections is O(N Long N), nothing is faster than this 
 
 // Array //
@@ -8,11 +8,11 @@ most fundamental data structure.
 "An array is an indexable contiguous chunk of memory"
 - fixed in size
 
-// Linked list // 
+--- Linked list --- 
 "list data structure with a flexible size"
 - pack your data into nodes that holds the data and the pointer to the next node
 
-// Binary tree // 
+--- Binary tree ---
 Nodes that point to a left and right child (sub tree) 
 Binary search tree: left child must be smaller, right child must be bigger or equal
 - self balancing search trees (red and black trees)
