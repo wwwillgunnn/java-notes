@@ -6,14 +6,6 @@ Cool video on time complexity: https://www.youtube.com/watch?v=v1SYihb4rcw&ab_ch
 Useful resources
 jomaClass:
 
-// Heap (another type of tree) // - actually use this !
-Parent nodes have greater than or equal to priority as their child nodes 
-- sometimes called priority que (the root is always the highest priority element (min or max heap)
-- rest of the heap is unsorted
-- at most doing O(N Long N) comparisons
-- look at the wiki on how to build a heap
-- can be represented as an array
-
 // Stack trees // 
 depth first search --> uses a stack 
 stack is a list based data structure where you can only add or pop from the end Last In First Out
