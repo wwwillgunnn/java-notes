@@ -1,13 +1,4 @@
-This repo contains notes for ST2 (DATA STRUCTURES AND ALGORITHMS)
-
-// Data structures // 
-Time complexity is one of the most import things.
-- BigO notation (A mathematical notation used to classify algorithms according to how their run time or space requirements grow as the input size grows)
-- constant / O(1) is most ideal
-- O(1) > O(Log N) > O(N) > O(N Long N) > O(N^2) > O(2^n) > O(n!)
-  
-// Space complexity (The relationship between growth of input size and growth space needed) //
-- Binary search (It's like searching for a word in the dictionary, open, half, half, half)
+This repo contains notes for ST2 (DATA STRUCTURES AND ALGORITHMS)  
    
 // Sorting algorithms //
 The cost to sort an arbitrary collections is O(N Long N), nothing is faster than this 
